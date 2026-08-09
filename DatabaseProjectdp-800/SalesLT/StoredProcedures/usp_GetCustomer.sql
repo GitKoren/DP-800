@@ -1,4 +1,4 @@
-CREATE PROCEDURE dbo.usp_GetCustomer
+CREATE PROCEDURE SalesLT.usp_GetCustomer
     @CustomerId int
 AS
 BEGIN
@@ -8,3 +8,5 @@ BEGIN
     FROM SalesLT.Customer
     WHERE CustomerID = @CustomerId;
 END;
+GO
+
